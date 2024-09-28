@@ -23,15 +23,14 @@
                 <label for="studentId">Student ID :</label>
                 <input type="number" id="studentId" required>
                 
-                <label for="class">Class :</label>
-                <input type="text" id="class" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
                 
-                <label for="rollNo">Roll No :</label>
-                <input type="number" id="rollNo" required>
-            
+                <label for="contact">Contact No :</label>
+                <input type="tel" id="contact" pattern="[0-9]{10}" required>
+
                 <button type="submit">Add Student</button>
             </form>
-            
         </section>
 
         <!-- Right side data display -->
@@ -42,8 +41,8 @@
                     <tr>
                         <th>Student Name</th>
                         <th>Student ID</th>
-                        <th>Class</th>
-                        <th>Roll No.</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
