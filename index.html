@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        
+    </header>
+
+    <!-- Container for flex layout -->
+    <div class="container">
+        <!-- Left side form -->
+        <section class="form-section">
+            <form id="studentForm">
+                <label for="name">Student Name :</label>
+                <input type="text" id="name" required>
+                
+                <label for="studentId">Student ID :</label>
+                <input type="number" id="studentId" required>
+                
+                <label for="class">Class :</label>
+                <input type="text" id="class" required>
+                
+                <label for="rollNo">Roll No :</label>
+                <input type="number" id="rollNo" required>
+            
+                <button type="submit">Add Student</button>
+            </form>
+            
+        </section>
+
+        <!-- Right side data display -->
+        <section id="displaySection" class="data-section">
+            <h2>Registered Students</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Class</th>
+                        <th>Roll No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
